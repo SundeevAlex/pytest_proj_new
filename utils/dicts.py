@@ -4,4 +4,8 @@ def get_val(collection, key, default='git'):
     если ключ существует. В ином случае возвращается значение
     default.
     """
-    pass
+    if collection != {}:
+        return collection[key]
+    return default
+
+
